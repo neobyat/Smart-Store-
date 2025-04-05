@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Store - Loja de Hosts e Design</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
+      color: #ffffff;
+    }
+
+    header {
+      background: linear-gradient(90deg, #00ffc3, #0051ff);
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #000;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #000;
+      font-size: 1.2em;
+    }
+
+    nav {
+      background-color: #1a1a1a;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #00ffc3;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .container {
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: #1c1c1c;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 10px #00ffc3;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px #00ffc3;
+    }
+
+    .card h2 {
+      color: #00ffc3;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-size: 1em;
+      color: #ccc;
+    }
+
+    .card span {
+      display: block;
+      margin-top: 15px;
+      font-size: 1.2em;
+      color: #00ffae;
+    }
+
+    .discord-section {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #111;
+    }
+
+    .discord-section h2 {
+      color: #5865F2;
+      margin-bottom: 15px;
+    }
+
+    .discord-link {
+      display: inline-block;
+      background: #5865F2;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .discord-link:hover {
+      background: #404EED;
+    }
+
+    footer {
+      background-color: #141414;
+      text-align: center;
+      color: #aaa;
+      padding: 25px 10px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Smart Store</h1>
+    <p>Hospedagem Profissional e Design com Qualidade</p>
+  </header>
+
+  <nav>
+    <a href="#produtos">Produtos</a>
+    <a href="#discord">Discord</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="produtos" class="container">
+    <div class="card">
+      <h2>Host Minecraft</h2>
+      <p>Hospedagem dedicada com painel, DDoS protection e suporte 24/7.</p>
+      <span>A partir de R$ 15,00/mês</span>
+    </div>
+
+    <div class="card">
+      <h2>Host SA-MP</h2>
+      <p>Tenha seu servidor SA-MP estável, com fácil configuração e proteção.</p>
+      <span>A partir de R$ 10,00/mês</span>
+    </div>
+
+    <div class="card">
+      <h2>Host MTA</h2>
+      <p>Servidor MTA otimizado para comunidades com performance alta.</p>
+      <span>A partir de R$ 12,00/mês</span>
+    </div>
+
+    <div class="card">
+      <h2>Design Gráfico</h2>
+      <p>Criação de logos, banners, thumbnails, kits para Discord e redes sociais.</p>
+      <span>A partir de R$ 20,00</span>
+    </div>
+  </section>
+
+  <section id="discord" class="discord-section">
+    <h2>Fale com a Gente no Discord</h2>
+    <a class="discord-link" href="https://discord.gg/GYBxY2yE" target="_blank">Entrar no Discord</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Smart Store. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
