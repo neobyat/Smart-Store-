@@ -1,1054 +1,119 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Site Oficial Lx HostingBr">
-    <meta name="author" content="@TerrozinPlay">
-
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-	<meta property="og:site_name" content=""> <!-- website name -->
-	<meta property="og:site" content=""> <!-- website link -->
-	<meta property="og:title" content=""> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content=""> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content=""> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content=""> <!-- where do you want your post to link to -->
-	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
-
-    <!-- Webpage Title -->
-    <title>Lx HostingBr</title>
-
-    <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&amp;display=swap" rel="stylesheet">
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/fontawesome-all.min.css" rel="stylesheet">
-    <link href="./css/aos.min.css" rel="stylesheet">
-    <link href="./css/swiper.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
-
-    <!-- Favicon -->
-    <link rel="icon" href="./assets/images/favicon.png">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Store - Planos de Host</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(90deg, #00ffc3, #0051ff);
+      color: #000;
+    }
+    table {
+      width: 95%;
+      margin: auto;
+      margin-top: 30px;
+      border-collapse: collapse;
+      background-color: #1c1c1c;
+    }
+    th, td {
+      border: 1px solid #00ffc3;
+      padding: 12px;
+      text-align: center;
+      vertical-align: middle;
+    }
+    th {
+      background-color: #00ffc3;
+      color: #000;
+    }
+    tr:nth-child(even) {
+      background-color: #1f1f1f;
+    }
+    .btn-cart {
+      display: block;
+      margin: 30px auto;
+      padding: 12px 20px;
+      background-color: #00ffc3;
+      color: #000;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .btn-cart:hover {
+      background-color: #00d1aa;
+    }
+    #checkout {
+      display: none;
+      margin-top: 40px;
+    }
+    .qr {
+      width: 140px;
+      margin: 5px 0;
+    }
+    .discord-btn {
+      background-color: #5865F2;
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      cursor: pointer;
+      border-radius: 6px;
+      font-size: 0.9em;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .discord-btn:hover {
+      background-color: #404EED;
+    }
+  </style>
 </head>
-<body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
-    
-    <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
-        <div class="container">
+<body>
+  <h1>Planos SAMP / MTA</h1>
+  <table>
+    <tr><th>Plano</th><th>Valor</th></tr>
+    <tr><td>35 Slots</td><td>R$ 3,00</td></tr>
+    <tr><td>50 Slots</td><td>R$ 5,00</td></tr>
+    <tr><td>100 Slots</td><td>R$ 8,00</td></tr>
+    <tr><td>200 Slots</td><td>R$ 12,00</td></tr>
+    <tr><td>300 Slots</td><td>R$ 16,00</td></tr>
+    <tr><td>400 Slots</td><td>R$ 25,00</td></tr>
+    <tr><td>500 Slots</td><td>R$ 35,00</td></tr>
+    <tr><td>600 Slots</td><td>R$ 40,00</td></tr>
+    <tr><td>700 Slots</td><td>R$ 45,00</td></tr>
+    <tr><td>800 Slots</td><td>R$ 50,00</td></tr>
+    <tr><td>900 Slots</td><td>R$ 60,00</td></tr>
+    <tr><td>1000 Slots</td><td>R$ 70,00</td></tr>
+  </table>
 
-            <!-- Image Logo -->
-            <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> -->
+  <button class="btn-cart" onclick="document.getElementById('checkout').style.display='block'; window.scrollTo(0, document.body.scrollHeight);">Ver Carrinho</button>
 
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <a class="navbar-brand logo-text" href="index.html">Lx HostingBr</a>
-
-            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ms-auto navbar-nav-scroll">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#header">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#plans">Planos</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false" href="#">Outros</a>
-                        
-                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="terms.html">Termos e Condições</a></li>
-                        </ul>
-                </li></ul>
-                <span class="nav-item social-icons">
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-facebook-f fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-twitter fa-stack-1x"></i>
-                        </a>
-                    </span>
-                </span>
-            </div> <!-- end of navbar-collapse -->
-        </div> <!-- end of container -->
-    </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
-
-
-    <!-- Home -->
-    <section class="home py-5 d-flex align-items-center" id="home">
-        <div class="container text-light py-5 aos-init aos-animate" data-aos="fade-right"> 
-            <h1 class="headline">Bem Vindo(a) <span class="home_text">Lx HostingBr</span><br>Planos de Hospedagens!</h1>
-            <p class="para para-light py-3">Desde 2020 temos trabalhado muito na qualidade das hosts para deixar nossos clientes mais satisfeitos.</p>
-            <div class="d-flex align-items-center">
-                <p class="p-2"><i class="fas fa-laptop-house fa-lg"></i></p>
-                <p>Qualidade de Atendimento.</p>  
-            </div>
-            <div class="d-flex align-items-center">
-                <p class="p-2"><i class="fas fa-wifi fa-lg"></i></p>
-                <p>Qualidade de Hospedagens.</p>  
-            </div>
-            <div class="my-3">
-                <a class="btn" href="#plans">Ver planos</a>
-            </div>
-        </div> <!-- end of container -->
-    </section> <!-- end of home -->
-
-
-    <!-- Information -->
-    <section class="information">
-        <div class="container-fluid">  
-            <div class="row text-light">
-                <div class="col-lg-4 text-center p-5 aos-init" data-aos="zoom-in">
-                    <i class="fas fa-tachometer-alt fa-3x p-2"></i>
-                    <h4 class="py-3">Ping 100 ms</h4>
-                    <p class="para-light">Contamos com o ping EUA!</p>
-                </div>
-                <div class="col-lg-4 text-center p-5 aos-init" data-aos="zoom-in">
-                    <i class="fas fa-clock fa-3x p-2"></i>
-                    <h4 class="py-3">24/7 Servidor Online</h4>
-                    <p class="para-light"> Conosco seu Servidor fica 24horas ligado!</p>
-                </div>
-                <div class="col-lg-4 text-center p-5 text-dark aos-init" data-aos="zoom-in"> 
-                    <i class="fas fa-headset fa-3x p-2"></i>
-                    <h4 class="py-3">Melhor Suporte </h4>
-                    <p class="para-light">Tem dúvidas abra um ticket no discord!</p>
-                </div>
-            </div>
-        </div> <!-- end of container -->
-    </section> <!-- end of information -->
-    	
-    
-    <!-- Plans -->
-    <section class="plans d-flex align-items-center py-5" id="plans">
-        <div class="container text-light">
-            <div class="text-center pb-4">
-                <p>Planos Disponiveís</p>
-                <h2 class="py-2">Temos Vários Planos</h2>
-                <p class="para-light">Abaixo Escolha um e click em em "comprar" você será automáticamente enviado para o canal de compras!</p>
-            </div>
-            <h4 class="text-center py-2">Planos SA:MP</h4>
-            <h2 class="mb-4"></h2>
-            <div class="row gy-4 aos-init" data-aos="zoom-in">
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">Host 50 Slots</h4>
-                        <p class="py-3">Host SA:MP</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com DataBase.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ip Personalizado.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ping 100 ms.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porta Aleatoria.</p>
-                        </div>
-                        <h4 class="py-3">2R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">Host 100 Slots</h4>
-                        <p class="py-3">Host SA:MP</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com DataBase.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ip Personalizado.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ping 100 ms.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porta Aleatoria.</p>
-                        </div>
-                        <h4 class="py-3">3R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">Host 200 Slots</h4>
-                        <p class="py-3">Host SA:MP</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com DataBase.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ip Personalizado.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ping 100 ms.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porta Aleatoria.</p>
-                        </div>
-                        <h4 class="py-3">4R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>                    
-                        </div>
-                    </div>  
-                </div>
-                
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">Host 300 Slots</h4>
-                        <p class="py-3">Host SA:MP</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com DataBase.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ip Personalizado + IPV6.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ping 100 ms.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porta Aleatoria.</p>
-                        </div>
-                        <h4 class="py-3">5R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>                    
-                        </div>
-                    </div>  
-                </div>
-                
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">Host 400 Slots</h4>
-                        <p class="py-3">Host SA:MP</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com DataBase.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ip Personalizado + IPV6.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ping 100 ms.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porta Aleatoria.</p>
-                        </div>
-                        <h4 class="py-3">6R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>                    
-                        </div>
-                    </div>  
-                </div>
-                
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">Host 500 Slots</h4>
-                        <p class="py-3">Host SA:MP</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com DataBase.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ip Personalizado + IPV6.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ping 100 ms.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porta Aleatoria.</p>
-                        </div>
-                        <h4 class="py-3">7R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>                    
-                        </div>
-                    </div>  
-                </div>
-                
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">Host 600 Slots</h4>
-                        <p class="py-3">Host SA:MP</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com DataBase.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ip Personalizado + IPV6.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ping 100 ms.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porta Aleatoria.</p>
-                        </div>
-                        <h4 class="py-3">8R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>                    
-                        </div>
-                    </div>  
-                </div>
-                
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">Host 700 Slots</h4>
-                        <p class="py-3">Host SA:MP</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com DataBase.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ip Personalizado + IPV6.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ping 100 ms.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porta Aleatoria.</p>
-                        </div>
-                        <h4 class="py-3">9R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>                    
-                        </div>
-                    </div>  
-                </div>
-                
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">Host 800 Slots</h4>
-                        <p class="py-3">Host SA:MP</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com DataBase.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ip Personalizado + IPV6.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ping 100 ms.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porta Aleatoria.</p>
-                        </div>
-                        <h4 class="py-3">10R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>                    
-                        </div>
-                    </div>  
-                </div>
-                
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">Host 900 Slots</h4>
-                        <p class="py-3">Host SA:MP</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com DataBase.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ip Personalizado + IPV6.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ping 100 ms.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porta Aleatoria.</p>
-                        </div>
-                        <h4 class="py-3">11R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>                    
-                        </div>
-                    </div>  
-                </div>
-                
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">Host 1000 Slots</h4>
-                        <p class="py-3">Host SA:MP</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com DataBase.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ip Personalizado + IPV6.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ping 100 ms.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porta Aleatoria.</p>
-                        </div>
-                        <h4 class="py-3">12R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>                    
-                        </div>
-                    </div>  
-                </div>
-                <h4 class="text-center py-3">Planos VPS</h4>
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">VPS UBUNTU(LINUX)</h4>
-                        <p class="py-3">Versão: 20.04</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com ambiente todo configurado.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Otima para criação de paineis de hospedagem.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Localidade: EUA.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com ssh ativo.</p>
-                        </div>
-                        <h4 class="py-3">30R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>                    
-                        </div>
-                    </div>  
-                </div>
-                
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">VPS UBUNTU(LINUX)</h4>
-                        <p class="py-3">Versão: 22.04</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com ambiente todo configurado.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Otima para criação de paineis de hospedagem.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Localidade: EUA.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com ssh ativo.</p>
-                        </div>
-                        <h4 class="py-3">35R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>                    
-                        </div>
-                    </div>  
-                </div>
-                
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">VPS UBUNTU(LINUX)</h4>
-                        <p class="py-3">Versão: 24.04</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com ambiente todo configurado.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Otima para criação de paineis de hospedagem.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Localidade: EUA.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com ssh ativo.</p>
-                        </div>
-                        <h4 class="py-3">37R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>                    
-                        </div>
-                    </div>  
-                </div>
-                <h4 class="text-center py-3">Planos MTA</h4>
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">Host 50 Slots</h4>
-                        <p class="py-3">Host MTA</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com DataBase.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ip Personalizado + IPV6.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ping 100 ms.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porta Aleatoria.</p>
-                        </div>
-                        <h4 class="py-3">2R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>                    
-                        </div>
-                    </div>  
-                </div>
-                
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">Host 100 Slots</h4>
-                        <p class="py-3">Host MTA</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com DataBase.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ip Personalizado + IPV6.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ping 100 ms.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porta Aleatoria.</p>
-                        </div>
-                        <h4 class="py-3">3R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>                    
-                        </div>
-                    </div>  
-                </div>
-                
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">Host 200 Slots</h4>
-                        <p class="py-3">Host MTA</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com DataBase.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ip Personalizado + IPV6.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ping 100 ms.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porta Aleatoria.</p>
-                        </div>
-                        <h4 class="py-3">4R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>                    
-                        </div>
-                    </div>  
-                </div>
-                
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">Host 300 Slots</h4>
-                        <p class="py-3">Host MTA</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com DataBase.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ip Personalizado + IPV6.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ping 100 ms.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porta Aleatoria.</p>
-                        </div>
-                        <h4 class="py-3">5R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>                    
-                        </div>
-                    </div>  
-                </div>
-                
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">Host 400 Slots</h4>
-                        <p class="py-3">Host MTA</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com DataBase.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ip Personalizado + IPV6.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ping 100 ms.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porta Aleatoria.</p>
-                        </div>
-                        <h4 class="py-3">6R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>                    
-                        </div>
-                    </div>  
-                </div>
-                
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">Host 500 Slots</h4>
-                        <p class="py-3">Host MTA</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com DataBase.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ip Personalizado + IPV6.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ping 100 ms.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porta Aleatoria.</p>
-                        </div>
-                        <h4 class="py-3">7R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>                    
-                        </div>
-                    </div>  
-                </div>
-                
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">Host 600 Slots</h4>
-                        <p class="py-3">Host MTA</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com DataBase.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ip Personalizado + IPV6.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ping 100 ms.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porta Aleatoria.</p>
-                        </div>
-                        <h4 class="py-3">8R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>                    
-                        </div>
-                    </div>  
-                </div>
-                
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">Host 700 Slots</h4>
-                        <p class="py-3">Host MTA</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com DataBase.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ip Personalizado + IPV6.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ping 100 ms.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porta Aleatoria.</p>
-                        </div>
-                        <h4 class="py-3">9R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>                    
-                        </div>
-                    </div>  
-                </div>
-                
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">Host 800 Slots</h4>
-                        <p class="py-3">Host MTA</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com DataBase.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ip Personalizado + IPV6.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ping 100 ms.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porta Aleatoria.</p>
-                        </div>
-                        <h4 class="py-3">10R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>                    
-                        </div>
-                    </div>  
-                </div>
-                
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">Host 900 Slots</h4>
-                        <p class="py-3">Host MTA</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com DataBase.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ip Personalizado + IPV6.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ping 100 ms.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porta Aleatoria.</p>
-                        </div>
-                        <h4 class="py-3">11R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>                    
-                        </div>
-                    </div>  
-                </div>
-                
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2">Host 1000 Slots</h4>
-                        <p class="py-3">Host MTA</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Vem com DataBase.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ip Personalizado + IPV6.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Ping 100 ms.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porta Aleatoria.</p>
-                        </div>
-                        <h4 class="py-3">12R$/Mês</h4>
-                        <div class="my-3">
-                            <a class="btn" href="RegistroELogin.html">Comprar</a>                    
-                        </div>
-                    </div>  
-                </div>
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </section> <!-- end of plans -->
-    	
-    
-    <!-- Testimonials -->
-    <div class="slider-1 testimonial text-light d-flex align-items-center">
-        <div class="container">
-            <div class="row">
-                <div class="text-center w-lg-75 m-auto pb-4">
-                    <p>Loja Confiavel</p>
-                    <h2 class="py-2">Abaixo Real ou Fake</h2>
-                    <p class="para-light">Veja oque os nossos clientes disseram!</p>
-                </div>
-            </div> <!-- end of row -->
-            <div class="row p-2 aos-init" data-aos="zoom-in">
-                <div class="col-lg-12">
-
-                    <!-- Card Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container card-slider swiper-container-horizontal">
-                            <div class="swiper-wrapper" style="transform: translate3d(-937.5px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 272.5px; margin-right: 40px;">
-                                    <div class="testimonial-card p-4">
-                                        <p>Real ou Fake?</p>
-                                        <div class="d-flex pt-4">
-                                            <div>
-                                                <img class="img-fluid mt-5 mb-3" src="./assets/images/real-4.jpg" alt="testimonial">
-                                            </div>
-                                            <div class="ms-3 pt-2">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4" style="width: 272.5px; margin-right: 40px;">
-                                    <div class="testimonial-card p-4">
-                                        <p>Real ou Fake?</p>
-                                        <div class="d-flex pt-4">
-                                            <div>
-                                                <img class="img-fluid mt-5 mb-3" src="./assets/images/real-5.jpg" alt="testimonial">
-                                            </div>
-                                            <div class="ms-3 pt-2">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" style="width: 272.5px; margin-right: 40px;">
-                                    <div class="testimonial-card p-4">
-                                        <p>Real ou Fake?</p>
-                                    
-                                        <div class="d-flex pt-4">
-                                            <div>
-                                                <img class="img-fluid mt-5 mb-3" src="./assets/images/real-1.jpg" alt="testimonial">
-                                            </div>
-                                            <div class="ms-3 pt-2">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" style="width: 272.5px; margin-right: 40px;">
-                                    <div class="testimonial-card p-4">
-                                        <p>Real ou Fake?</p>
-                                        <div class="d-flex pt-4">
-                                            <div>
-                                                <img class="img-fluid mt-5 mb-3" src="./assets/images/real-2.jpg" alt="testimonial">
-                                            </div>
-                                            <div class="ms-3 pt-2">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="2" style="width: 272.5px; margin-right: 40px;">
-                                    <div class="testimonial-card p-4">
-                                        <p>Real ou Fake?</p>
-                                        <div class="d-flex pt-4">
-                                            <div>
-                                                <img class="img-fluid mt-5 mb-3" src="./assets/images/real-3.jpg" alt="testimonial">
-                                            </div>
-                                            <div class="ms-3 pt-2">
-                                            </div>
-                                        </div>
-                                    </div>      
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide" data-swiper-slide-index="3" style="width: 272.5px; margin-right: 40px;">
-                                    <div class="testimonial-card p-4">
-                                        <p>Real ou Fake?</p>
-                                        <div class="d-flex pt-4">
-                                            <div>
-                                                <img class="img-fluid mt-5 mb-3" src="./assets/images/real-4.jpg" alt="testimonial">
-                                            </div>
-                                            <div class="ms-3 pt-2">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-                                	
-                                <!-- Slide -->
-                                <div class="swiper-slide" data-swiper-slide-index="4" style="width: 272.5px; margin-right: 40px;">
-                                    <div class="testimonial-card p-4">
-                                        <p>Real ou Fake?</p>
-                                        <div class="d-flex pt-4">
-                                            <div>
-                                                <img class="img-fluid mt-5 mb-3" src="./assets/images/real-5.jpg" alt="testimonial">
-                                            </div>
-                                            <div class="ms-3 pt-2">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-
-                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" style="width: 272.5px; margin-right: 40px;">
-                                    <div class="testimonial-card p-4">
-                                        <p>Real ou Fake?</p>
-                                    
-                                        <div class="d-flex pt-4">
-                                            <div>
-                                                <img class="img-fluid mt-5 mb-3" src="./assets/images/real-1.jpg" alt="testimonial">
-                                            </div>
-                                            <div class="ms-3 pt-2">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1" style="width: 272.5px; margin-right: 40px;">
-                                    <div class="testimonial-card p-4">
-                                        <p>Real ou Fake?</p>
-                                        <div class="d-flex pt-4">
-                                            <div>
-                                                <img class="img-fluid mt-5 mb-3" src="./assets/images/real-2.jpg" alt="testimonial">
-                                            </div>
-                                            <div class="ms-3 pt-2">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div></div> <!-- end of swiper-wrapper -->
-        
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"></div>
-                            <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"></div>
-                            <!-- end of add arrows -->
-        
-                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div> <!-- end of swiper-container -->
-                    </div> <!-- end of slider-container -->
-                    <!-- end of card slider -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of testimonials -->
-    	
-    <!-- Footer -->
-    <section class="footer text-light">
-        <div class="container">
-            <div class="row aos-init" data-aos="fade-right">
-                <div class="col-lg-3 py-4 py-md-5">
-                    <div class="d-flex align-items-center">
-                        <h4 class="">Lx HostingBr</h4>
-                    </div>
-                    <p class="py-3 para-light">Site Desenvolvido pelo @TerrozinPlay.</p>
-                    <div class="d-flex">
-                        <div class="me-3">
-                            <a href="#your-link">
-                                <i class="fab fa-facebook-f fa-2x py-2"></i>
-                            </a>
-                        </div>
-                        <div class="me-3">
-                            <a href="#your-link">
-                                <i class="fab fa-twitter fa-2x py-2"></i>
-                            </a>
-                        </div>
-                        <div class="me-3">
-                            <a href="#your-link">
-                                <i class="fab fa-instagram fa-2x py-2"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div> <!-- end of col -->
-
-                <div class="col-lg-3 py-4 py-md-5">
-                    <div>
-                        <h4 class="py-2">Redes Sociais</h4>
-                        <div class="d-flex align-items-center py-2">
-                            <i class="fas fa-caret-right"></i>
-                            <a href="https://discord.gg/RZEYEApzGN"><p class="ms-3">Discord</p></a>
-                        </div>
-                        <div class="d-flex align-items-center py-2">
-                            <i class="fas fa-caret-right"></i>
-                            <a href="https://youtu.be/45MPaabAtwE?si=kAIVOFz2l3sistYq"><p class="ms-3">Youtube</p></a>
-                        </div>
-                        <div class="d-flex align-items-center py-2">
-                            <i class="fas fa-caret-right"></i>
-                            <a href="#"><p class="ms-3">Instagram</p></a>
-                        </div>
-                        <div class="d-flex align-items-center py-2">
-                            <i class="fas fa-caret-right"></i>
-                            <a href="terms.html"><p class="ms-3">Termos e Condições</p></a>
-                        </div>
-                    </div>
-                </div> <!-- end of col -->
-
-
-    <!-- Bottom -->
-    <div class="bottom py-2 text-light">
-        <div class="container d-flex justify-content-between">
-            <div>
-                <p>Copyright © Lx HostingBr</p><br>
-                <p>Discord da Empresa: <a href="https://discord.gg/yF4GpaQeZP" style="color: #28a745;">Clique Aqui</a></p>
-            </div>
-            <div>
-                <i class="fab fa-cc-visa fa-lg p-1"></i>
-                <i class="fab fa-cc-mastercard fa-lg p-1"></i>
-                <i class="fab fa-cc-paypal fa-lg p-1"></i>
-                <i class="fab fa-cc-amazon-pay fa-lg p-1"></i>
-            </div>
-        </div> <!-- end of container -->
-    </div> <!-- end of bottom -->
- 
-    
-    <!-- Back To Top Button -->
-    <button onclick="topFunction()" id="myBtn">
-        <img src="assets/images/up-arrow.png" alt="alternative">
-    </button>
-    <!-- end of back to top button -->
-
-    
-    <!-- Scripts -->
-    <script src="./js/bootstrap.min.js"></script><!-- Bootstrap framework -->
-    <script src="./js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
-    <script src="./js/swiper.min.js"></script><!-- Swiper for image and text sliders -->
-    <script src="./js/aos.js"></script><!-- AOS on Animation Scroll -->
-    <script src="./js/script.js"></script>  <!-- Custom scripts -->
-
-</div></div></section></body></html>
+  <div id="checkout">
+    <h1 style="margin-top:40px;">Finalizar Compra (Pix + Suporte)</h1>
+    <table>
+      <tr><th>Plano</th><th>Valor</th><th>Pagamento Pix</th></tr>
+      <!-- Planos com QR Code -->
+      <tr><td>35 Slots</td><td>R$ 3,00</td><td><img src="pix_qrcodes/pix_3.00.png" class="qr"><br><small>Pix: <b>33997323609</b></small><br><a href="https://discord.gg/GYBxY2yE" class="discord-btn" target="_blank">Abrir Suporte</a></td></tr>
+      <tr><td>50 Slots</td><td>R$ 5,00</td><td><img src="pix_qrcodes/pix_5.00.png" class="qr"><br><small>Pix: <b>33997323609</b></small><br><a href="https://discord.gg/GYBxY2yE" class="discord-btn" target="_blank">Abrir Suporte</a></td></tr>
+      <tr><td>100 Slots</td><td>R$ 8,00</td><td><img src="pix_qrcodes/pix_8.00.png" class="qr"><br><small>Pix: <b>33997323609</b></small><br><a href="https://discord.gg/GYBxY2yE" class="discord-btn" target="_blank">Abrir Suporte</a></td></tr>
+      <tr><td>200 Slots</td><td>R$ 12,00</td><td><img src="pix_qrcodes/pix_12.00.png" class="qr"><br><small>Pix: <b>33997323609</b></small><br><a href="https://discord.gg/GYBxY2yE" class="discord-btn" target="_blank">Abrir Suporte</a></td></tr>
+      <tr><td>300 Slots</td><td>R$ 16,00</td><td><img src="pix_qrcodes/pix_16.00.png" class="qr"><br><small>Pix: <b>33997323609</b></small><br><a href="https://discord.gg/GYBxY2yE" class="discord-btn" target="_blank">Abrir Suporte</a></td></tr>
+      <tr><td>400 Slots</td><td>R$ 25,00</td><td><img src="pix_qrcodes/pix_25.00.png" class="qr"><br><small>Pix: <b>33997323609</b></small><br><a href="https://discord.gg/GYBxY2yE" class="discord-btn" target="_blank">Abrir Suporte</a></td></tr>
+      <tr><td>500 Slots</td><td>R$ 35,00</td><td><img src="pix_qrcodes/pix_35.00.png" class="qr"><br><small>Pix: <b>33997323609</b></small><br><a href="https://discord.gg/GYBxY2yE" class="discord-btn" target="_blank">Abrir Suporte</a></td></tr>
+      <tr><td>600 Slots</td><td>R$ 40,00</td><td><img src="pix_qrcodes/pix_40.00.png" class="qr"><br><small>Pix: <b>33997323609</b></small><br><a href="https://discord.gg/GYBxY2yE" class="discord-btn" target="_blank">Abrir Suporte</a></td></tr>
+      <tr><td>700 Slots</td><td>R$ 45,00</td><td><img src="pix_qrcodes/pix_45.00.png" class="qr"><br><small>Pix: <b>33997323609</b></small><br><a href="https://discord.gg/GYBxY2yE" class="discord-btn" target="_blank">Abrir Suporte</a></td></tr>
+      <tr><td>800 Slots</td><td>R$ 50,00</td><td><img src="pix_qrcodes/pix_50.00.png" class="qr"><br><small>Pix: <b>33997323609</b></small><br><a href="https://discord.gg/GYBxY2yE" class="discord-btn" target="_blank">Abrir Suporte</a></td></tr>
+      <tr><td>900 Slots</td><td>R$ 60,00</td><td><img src="pix_qrcodes/pix_60.00.png" class="qr"><br><small>Pix: <b>33997323609</b></small><br><a href="https://discord.gg/GYBxY2yE" class="discord-btn" target="_blank">Abrir Suporte</a></td></tr>
+      <tr><td>1000 Slots</td><td>R$ 70,00</td><td><img src="pix_qrcodes/pix_70.00.png" class="qr"><br><small>Pix: <b>33997323609</b></small><br><a href="https://discord.gg/GYBxY2yE" class="discord-btn" target="_blank">Abrir Suporte</a></td></tr>
+    </table>
+  </div>
+</body>
+</html>
